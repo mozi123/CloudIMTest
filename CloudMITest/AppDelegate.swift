@@ -9,10 +9,28 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
 
     var window: UIWindow?
 
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
+        
+        let userInfo = RCUserInfo()
+        
+        userInfo.userId = userId
+        
+        switch userId {
+        case "mozf":
+            userInfo.name = "mozifeng"
+            userInfo.portraitUri = "http://tp1.sinaimg.cn/1800102740/180/40016213895/1.jpg"
+        case "mandy_014":
+            userInfo.name = "mandy"
+            userInfo.portraitUri = "http://tp2.sinaimg.cn/1075376185/180/5674894113/0.jpg"
+        default:
+            print("没有此用户")
+        }
+        return completion(userInfo)
+    }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
         
         RCIM.sharedRCIM().initWithAppKey("sfci50a7cbixi")
+        
+        RCIM.sharedRCIM().userInfoDataSource = self
         
         RCIM.sharedRCIM().connectWithToken("adVz6BeJIW5xN16AAjdmwg+a5Fv9HjHfnZ42j6obF8w3klyedFpzcu+z5XLpcw3ByONa7PhZw57FvwsfejPgsw==", success: { (_) -> Void in
             

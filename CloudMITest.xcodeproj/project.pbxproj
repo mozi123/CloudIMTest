@@ -14,6 +14,10 @@
 		2BC5FE991BD7690300CD5C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5FE971BD7690300CD5C1C /* Main.storyboard */; };
 		2BC5FE9B1BD7690300CD5C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5FE9A1BD7690300CD5C1C /* Assets.xcassets */; };
 		2BC5FEA61BD773FC00CD5C1C /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5FEA51BD773FC00CD5C1C /* PodFile */; settings = {ASSET_TAGS = (); }; };
+		2BFE88821BDB7BAD003CFC55 /* Conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFE88811BDB7BAD003CFC55 /* Conversation.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2BFE88851BDB7D4E003CFC55 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFE88831BDB7D4E003CFC55 /* Contact.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2BFE88871BDB7D62003CFC55 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFE88861BDB7D62003CFC55 /* Serve.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2BFE888A1BDB7DB8003CFC55 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFE88881BDB7DB8003CFC55 /* About.storyboard */; settings = {ASSET_TAGS = (); }; };
 		DB8E5E97B4E7B6F7519490E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2C84119C895CD181E67609 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		2BC5FE9A1BD7690300CD5C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC5FE9F1BD7690300CD5C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BC5FEA51BD773FC00CD5C1C /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		2BFE88811BDB7BAD003CFC55 /* Conversation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conversation.storyboard; sourceTree = "<group>"; };
+		2BFE88841BDB7D4E003CFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Contact.storyboard; sourceTree = "<group>"; };
+		2BFE88861BDB7D62003CFC55 /* Serve.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Serve.storyboard; sourceTree = "<group>"; };
+		2BFE88891BDB7DB8003CFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
 		3E2C84119C895CD181E67609 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FFC48B5FF7FE9F43EE2094 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +87,10 @@
 				2BC5FE931BD7690300CD5C1C /* AppDelegate.swift */,
 				2BC5FE951BD7690300CD5C1C /* ViewController.swift */,
 				2BC5FE971BD7690300CD5C1C /* Main.storyboard */,
+				2BFE88881BDB7DB8003CFC55 /* About.storyboard */,
+				2BFE88861BDB7D62003CFC55 /* Serve.storyboard */,
+				2BFE88831BDB7D4E003CFC55 /* Contact.storyboard */,
+				2BFE88811BDB7BAD003CFC55 /* Conversation.storyboard */,
 				2BC5FE9A1BD7690300CD5C1C /* Assets.xcassets */,
 				2BC5FE9F1BD7690300CD5C1C /* Info.plist */,
 				2B0F74161BD77D4700C83F51 /* CloudMITest-Bridging-Header.h */,
@@ -159,8 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC5FE9B1BD7690300CD5C1C /* Assets.xcassets in Resources */,
+				2BFE888A1BDB7DB8003CFC55 /* About.storyboard in Resources */,
+				2BFE88821BDB7BAD003CFC55 /* Conversation.storyboard in Resources */,
+				2BFE88871BDB7D62003CFC55 /* Serve.storyboard in Resources */,
 				2BC5FEA61BD773FC00CD5C1C /* PodFile in Resources */,
 				2BC5FE991BD7690300CD5C1C /* Main.storyboard in Resources */,
+				2BFE88851BDB7D4E003CFC55 /* Contact.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +251,22 @@
 				2BC5FE981BD7690300CD5C1C /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BFE88831BDB7D4E003CFC55 /* Contact.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFE88841BDB7D4E003CFC55 /* Base */,
+			);
+			name = Contact.storyboard;
+			sourceTree = "<group>";
+		};
+		2BFE88881BDB7DB8003CFC55 /* About.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFE88891BDB7DB8003CFC55 /* Base */,
+			);
+			name = About.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

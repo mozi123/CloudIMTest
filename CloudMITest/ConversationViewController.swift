@@ -14,8 +14,8 @@ class ConversationViewController: RCConversationViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.targetId = "xiaobo"
-        self.userName = "小波"
+        self.targetId = "mozf"
+        self.userName = "mozifeng"
         self.conversationType = RCConversationType.ConversationType_PRIVATE
         
         title = userName
